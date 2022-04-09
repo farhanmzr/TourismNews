@@ -13,6 +13,12 @@
 		02C25B4627FB62A000F87835 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C25B4427FB62A000F87835 /* Main.storyboard */; };
 		02C25B4827FB62A200F87835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C25B4727FB62A200F87835 /* Assets.xcassets */; };
 		02C25B4B27FB62A200F87835 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C25B4927FB62A200F87835 /* LaunchScreen.storyboard */; };
+		02C25B5427FB62E200F87835 /* Wisata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C25B5327FB62E200F87835 /* Wisata.swift */; };
+		02C25B5627FB62ED00F87835 /* DummyWisata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C25B5527FB62ED00F87835 /* DummyWisata.swift */; };
+		02F4D36327FC1EB2004E0584 /* TourismTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F4D36127FC1EB2004E0584 /* TourismTableViewCell.swift */; };
+		02F4D36427FC1EB2004E0584 /* TourismTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02F4D36227FC1EB2004E0584 /* TourismTableViewCell.xib */; };
+		02F4D36727FC28D0004E0584 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F4D36527FC28D0004E0584 /* DetailViewController.swift */; };
+		02F4D36827FC28D0004E0584 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02F4D36627FC28D0004E0584 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		02C25B4727FB62A200F87835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02C25B4A27FB62A200F87835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02C25B4C27FB62A200F87835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02C25B5327FB62E200F87835 /* Wisata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wisata.swift; sourceTree = "<group>"; };
+		02C25B5527FB62ED00F87835 /* DummyWisata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyWisata.swift; sourceTree = "<group>"; };
+		02F4D36127FC1EB2004E0584 /* TourismTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismTableViewCell.swift; sourceTree = "<group>"; };
+		02F4D36227FC1EB2004E0584 /* TourismTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourismTableViewCell.xib; sourceTree = "<group>"; };
+		02F4D36527FC28D0004E0584 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		02F4D36627FC28D0004E0584 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		02C25B3D27FB62A000F87835 /* TourismNews */ = {
 			isa = PBXGroup;
 			children = (
-				02C25B3E27FB62A000F87835 /* AppDelegate.swift */,
-				02C25B4027FB62A000F87835 /* SceneDelegate.swift */,
-				02C25B4227FB62A000F87835 /* ViewController.swift */,
-				02C25B4427FB62A000F87835 /* Main.storyboard */,
+				02F4D36027FC0EBB004E0584 /* Base */,
+				02F4D35F27FC0E9F004E0584 /* View */,
+				02F4D35E27FC0E96004E0584 /* Controller */,
+				02C25B5227FB62C600F87835 /* Model */,
 				02C25B4727FB62A200F87835 /* Assets.xcassets */,
-				02C25B4927FB62A200F87835 /* LaunchScreen.storyboard */,
 				02C25B4C27FB62A200F87835 /* Info.plist */,
 			);
 			path = TourismNews;
+			sourceTree = "<group>";
+		};
+		02C25B5227FB62C600F87835 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02C25B5327FB62E200F87835 /* Wisata.swift */,
+				02C25B5527FB62ED00F87835 /* DummyWisata.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02F4D35E27FC0E96004E0584 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				02C25B4227FB62A000F87835 /* ViewController.swift */,
+				02F4D36127FC1EB2004E0584 /* TourismTableViewCell.swift */,
+				02F4D36527FC28D0004E0584 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		02F4D35F27FC0E9F004E0584 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02C25B4427FB62A000F87835 /* Main.storyboard */,
+				02F4D36227FC1EB2004E0584 /* TourismTableViewCell.xib */,
+				02F4D36627FC28D0004E0584 /* DetailViewController.xib */,
+				02C25B4927FB62A200F87835 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02F4D36027FC0EBB004E0584 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				02C25B3E27FB62A000F87835 /* AppDelegate.swift */,
+				02C25B4027FB62A000F87835 /* SceneDelegate.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +177,9 @@
 			files = (
 				02C25B4B27FB62A200F87835 /* LaunchScreen.storyboard in Resources */,
 				02C25B4827FB62A200F87835 /* Assets.xcassets in Resources */,
+				02F4D36827FC28D0004E0584 /* DetailViewController.xib in Resources */,
 				02C25B4627FB62A000F87835 /* Main.storyboard in Resources */,
+				02F4D36427FC1EB2004E0584 /* TourismTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C25B5427FB62E200F87835 /* Wisata.swift in Sources */,
+				02F4D36327FC1EB2004E0584 /* TourismTableViewCell.swift in Sources */,
 				02C25B4327FB62A000F87835 /* ViewController.swift in Sources */,
 				02C25B3F27FB62A000F87835 /* AppDelegate.swift in Sources */,
 				02C25B4127FB62A000F87835 /* SceneDelegate.swift in Sources */,
+				02C25B5627FB62ED00F87835 /* DummyWisata.swift in Sources */,
+				02F4D36727FC28D0004E0584 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +349,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +378,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
